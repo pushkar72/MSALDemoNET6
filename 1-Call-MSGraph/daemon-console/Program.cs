@@ -19,6 +19,9 @@ namespace daemon_console
     /// which uses application permissions.
     /// For more information see https://aka.ms/msal-net-client-credentials
     /// </summary>
+
+
+    //Video Reference: https://www.youtube.com/watch?v=y9JKjMzU4-w&ab_channel=Microsoft365Developer
     class Program
     {
         static void Main(string[] args)
