@@ -198,10 +198,11 @@ namespace daemon_console
         /// <returns></returns>
         private static bool IsAppUsingClientSecret(AuthenticationConfig config)
         {
-            string clientSecretPlaceholderValue = "[Enter here a client secret for your application]";
+            string clientSecretPlaceholderValue = "2aa8Q~9YqdIM5ymopF93SsvUrdZ0MuuTefII4ddu";
 
-            if (!String.IsNullOrWhiteSpace(config.ClientSecret) && config.ClientSecret != clientSecretPlaceholderValue)
+            if (!String.IsNullOrWhiteSpace(config.ClientSecret))
             {
+                Console.WriteLine("Using Secret");
                 return true;
             }
 
